@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blog-ace/static/css/main.a0ae5a42.css",
+    "main.js": "/blog-ace/static/js/main.24a8aa36.js",
+    "index.html": "/blog-ace/index.html",
+    "main.a0ae5a42.css.map": "/blog-ace/static/css/main.a0ae5a42.css.map",
+    "main.24a8aa36.js.map": "/blog-ace/static/js/main.24a8aa36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0ae5a42.css",
+    "static/js/main.24a8aa36.js"
+  ]
+}
