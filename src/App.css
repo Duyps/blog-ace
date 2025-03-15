@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parisienne&family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Parisienne&family=Petit+Formal+Script&display=swap');
+:root{
+    --font-petit: "Petit Formal Script", cursive;
+    --font-inter: "Inter", sans-serif;
+    --font-newsreader: "Newsreader", serif;
+}
+*{
+    box-sizing: border-box;
+}body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

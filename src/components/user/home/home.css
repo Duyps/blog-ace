@@ -1,0 +1,193 @@
+/* Container chính */
+.home-container {
+    margin: 50px auto;
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Định dạng chung cho bài viết */
+.post-card {
+    overflow: hidden;
+    margin: 30px 0;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .decs{
+        display: none;
+    }
+}
+
+/* Ảnh banner của bài viết */
+.post-image {
+    width: 100%;
+    height: 250px; /* Đặt chiều cao cố định */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Nội dung bài viết */
+.infor {
+    padding: 10px;
+}
+
+.infor h2 {
+    font-family: var(--font-petit);
+    font-weight: 800;
+    font-size: 1.8vw;
+    margin: 10px 0;
+}
+
+.infor p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Bài viết lớn (post thứ 4) */
+.large-post {
+    grid-column: span 3;  /* Chiếm toàn bộ hàng */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ảnh banner trong bài viết lớn */
+.large-post .post-image {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Nội dung của bài viết lớn */
+.large-post .infor {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.large-post h2 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.large-post .decs {
+    display: block;
+    font-size: 1.2vw;
+    color: #333;
+}
+
+
+/*Post Detail*/
+.post-detail-container{
+    margin: 0 8.5vw;
+    .heading{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        margin: 50px 0;
+        .type{
+            grid-template-columns: 1;
+            font-size: 9vw;
+            font-family:  var(--font-petit);
+            font-weight: 700;
+        }
+        
+        .infor{
+            p{
+                font-family: var(--font-inter);
+            }
+            h1{
+                font-family: var(--font-petit);
+                font-size: 3rem;
+            }
+        }
+        
+    }
+    .post-image{
+        width: 100%;
+        min-height: 900px;
+        max-height: 900px;
+        object-fit: cover;
+        margin: 30px 0;
+    }
+    .post-content{
+        line-height: 1.8;
+        h1{
+            font-size: 2rem;
+        }
+        span{
+            font-style: bold;
+        }
+    }
+    .post-content blockquote {
+        position: relative;
+        padding-left: 16px; /* Khoảng cách giữa dấu gạch và nội dung */
+        margin: 10px 0;
+        font-style: italic;
+        color: #000000;
+        border-left: 2px solid #000000; /* Dấu gạch bên trái */
+        font-family: var(--font-petit);
+    }
+}
+
+.latest-section{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 40vw;
+    background-color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-family: var(--font-petit);
+        font-size: 10vw;
+        font-family: 800;
+        color: white;
+        margin-left: 8vw;
+    }
+    .latest-container{
+        .latest-posts{
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            .latest-card{
+                flex: 0 0 auto;
+                img{
+                    width: 40vw;
+                    height: 30vw;
+                    object-fit: cover;
+                }
+                h3{
+                    color: white;
+                }
+                .latest-date{
+                    font-family: var(--font-inter);
+                    font-weight: 100;
+                    font-size: 14px;
+                }
+                .latest-title{
+                    font-family: var(--font-petit);
+                    font-size: 2vw;
+                }
+            }
+        }
+        .latest-posts::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.post-banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.banner-image{
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+.post-banner:hover .banner-image{
+    transform: scale(1.05);
+    filter: blur(2px);
+}
+.arrow{
+    i{
+        transform: rotateZ(-45deg);
+        padding: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+    position: absolute;
+    font-size: 15px;
+    font-weight: 30;
+    color: white;
+    transition: transform 0.1s ease-out;
+    pointer-events: none;
+}

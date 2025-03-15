@@ -1,0 +1,53 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 8vw;
+    
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-family: var(--font-newsreader);
+        font-style: italic;
+        font-weight: 200;
+        line-height: 100%;
+        text-align: center;
+        font-size: 7vw;
+    }
+    hr{
+        height: 1.5px;
+        width: 70vw;
+        background-color: black;
+        margin: 30px 0;
+    }
+    p{
+        text-align: center;
+        width: 50vw;
+    }
+}
+
+.more-about{
+    padding: 5vw 0;
+    padding-bottom: 35vw;
+    margin-top: 20vw;
+    justify-content: center;    
+    display: grid;
+    grid-template-columns: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
+    gap: 2.5vw;
+    grid-template-rows: 35vw;
+    background-color: #1f1f1f;
+    .pic1{
+        grid-column: 1/5;
+        width: 100%;
+        align-self: flex-end;
+    }
+    p{
+        grid-column: 5/8;
+        width: 100%;
+        align-self: center;
+        color: white;
+        border-top: 1px solid white;
+    }
+    .pic2{
+        grid-column: 8/9;
+    }
+}

@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    padding: 20px 8.5vw;
+    justify-content: space-between;
+    .logo{
+        img{
+            height: 20px;
+        }
+    }
+    nav{
+        display: flex;
+        li{
+            margin: 0 10px;
+            font-family: var(--font-inter);
+            font-size: 14px;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        li:hover{
+            list-style: disc;
+            transition: all 1s ease;
+        }
+    }
+}
