@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import AdminLogin from './components/admin/AdminLogin/AdminLogin';
 import AdminDashboard from './components/admin/admin-dashboard/AdminDashboard';
 import Home from './components/user/home/Home';
